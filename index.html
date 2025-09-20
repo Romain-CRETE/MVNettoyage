@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVNettoyage - Propreté et brillance de vos vitres dans le Loiret</title>
+    <link rel="shortcut icon" href="img/LogoCercle.png">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="description"
+        content="MVNettoyage, entreprise de lavage de vitres dans le Loiret (45). Service rapide, fiable et bénéficiez de 50% de crédit d’impôt. Devis gratuit.">
+    <meta name="author" content="CRETE Romain">
+
+    <!-- Polices -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+
+        <nav class="menu">
+            <img src="img/LogoPetit.png" alt="logo" class="logo-mobile">
+            <div class="burger">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="#intro"><img src="img/LogoPetit.png" alt="logo" class="logo"></a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#avis">Avis</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section id="intro" class="hero">
+            <div class="hero-content">
+                <h1>MVNettoyage</h1>
+                <p>Vos vitres brillent comme jamais, partout dans le Loiret</p>
+                <a href="#contact" class="btn-primary">Demander un devis gratuit</a>
+                <div class="pub">
+                    <p>Service fiable et de qualité pour particuliers et professionnels. <br>
+                        Bénéficiez de 50 % de crédit d’impôt grâce au service à la personne .</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Galerie -->
+        <section id="photos" class="bloc">
+            <h2>Notre travail en images</h2>
+            <div class="gallery">
+                <img src="img/fenetreA.jpg" alt="Photo avant/après A">
+                <img src="img/fenetreB.jpg" alt="Photo avant/après B">
+                <img src="img/fenetreC.jpg" alt="Photo avant/après C">
+                <img src="img/fenetreD.jpg" alt="Photo avant/après D">
+                <img src="img/fenetreE.jpg" alt="Photo d'un bâtiment en cours de lavage">
+            </div>
+
+            <!-- Lightbox cachée au départ -->
+            <div class="lightbox" id="lightbox">
+                <span class="close">&times;</span>
+                <img id="lightbox-img" src="" alt="Agrandissement">
+                <span class="nav left" id="prev">&#10094;</span>
+                <span class="nav right" id="next">&#10095;</span>
+            </div>
+
+            <h2>Notre travail en vidéo</h2>
+            <div class="yt-thumbnail">
+                <a href="https://www.youtube.com/watch?v=vWJmS1TCEkk" target="_blank">
+                    <img src="https://img.youtube.com/vi/vWJmS1TCEkk/hqdefault.jpg" alt="Miniature YouTube">
+                </a>
+            </div>
+
+
+        </section>
+        </section>
+
+        <section id="avis" class="bloc">
+            <h2>vos avis</h2>
+
+            <p>Découvrez les avis de nos clients sur Google :</p>
+            <a href="https://www.google.com/search?q=MVNettoyage%20Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2NTI0MDQ2tTQxMzAzNzC0NDYx3sDI-IpRwDfML7WkJL8yMT1VwbEss3gRK4YQAEPkglJAAAAA&rldimm=5210135946067019343&tbm=lcl&cs=1&hl=fr&sa=X&ved=0CBkQ9fQKKABqFwoTCIilr8yz548DFQAAAAAdAAAAABAH&biw=913&bih=618&dpr=1#lkt=LocalPoiReviews"
+                target="_blank" class="btn-primary">
+                Voir les avis Google
+            </a>
+        </section>
+
+        <!-- Formulaire de contact -->
+        <section id="contact" class="bloc contact">
+            <h2>Contactez-nous</h2>
+            <form action="send_form.php" method="POST" enctype="multipart/form-data">
+                <!-- Nom et prénom -->
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom" placeholder="Nom" required>
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
+
+                <!-- Type de client -->
+                <fieldset>
+                    <legend>Vous êtes :</legend>
+                    <input type="radio" id="particulier" name="type-client" value="particulier" checked>
+                    <label for="particulier">Particulier</label><br>
+
+                    <input type="radio" id="professionnel" name="type-client" value="professionnel">
+                    <label for="professionnel">Professionnel</label><br>
+                </fieldset>
+
+                <!-- Coordonnées -->
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+
+                <label for="tel">Téléphone :</label>
+                <input type="tel" name="tel" id="tel" placeholder="Téléphone">
+
+                <!-- Message -->
+                <label for="message">Votre demande :</label>
+                <textarea name="message" id="message" rows="5" placeholder="Votre demande"></textarea>
+
+                <!-- Champ pour joindre des photos -->
+                <label for="photos">Joindre des photos (facultatif) :</label>
+                <input type="file" name="photos[]" id="photos" accept="image/*" multiple>
+
+                <!-- Bouton d'envoi -->
+                <button type="submit">Envoyer</button>
+            </form>
+
+            <!-- Coordonnées directes -->
+            <div class="coordonnees">
+                <h3>Contactez-nous directement :</h3>
+                <p>Téléphone : 06 24 38 71 94</p>
+                <p>Email : mv.nettoyage2@gmail.com</p>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MVNettoyage - Tous droits réservés</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
