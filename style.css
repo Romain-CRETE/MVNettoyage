@@ -623,4 +623,49 @@ h2 {
     #contact fieldset {
         padding: 10px;
     }
+
+}
+
+/* Section Présentation */
+.presentation {
+    background: #f4f4f4;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.presentation .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.services {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services li {
+    font-size: 1.125rem;
+    color: #555;
+    margin: 0.5rem 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.services li::before {
+    content: '✔';
+    color: #4caf50;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
