@@ -83,6 +83,14 @@ header {
     margin-top: 0px;
 }
 
+.social-icon {
+    width: 24px;
+
+    height: auto;
+    vertical-align: middle;
+
+}
+
 /* ================== */
 /* Responsive Mobile   */
 /* ================== */
